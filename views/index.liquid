@@ -1,14 +1,53 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+ 
+<article class="card">
+  <section class="card-front">
+    <h1>{{ person.name }}</h1>
+    <p> AD Frontend Design and Development</p>
+    <p>
 
-  <p>{{ person.name }}</p>
+  </section>
+  <section class="card-back">
 
-  <footer></footer>
+
+    <div class="container">
+
+      <div class="photo-back"><img src="assets/test studio 230120240236.jpg" alt="foto ik"></div>
+
+      <div class="text-back">
+        <h2>Me</h2>
+
+        <p>Ik ben Nadia en heb MBO Photographic designer gedaan.</p>
+        <p>Nu doe ik HBO AD Frontend Design and Development.</p>
+
+        <h3>Hobby's</H3>
+        <ul>
+          <li>📷 Fotografie </li>
+          <li>💻 Editen </li>
+          <li>📖 Lezen </li>
+          <li>🎧 Muziek luisteren </li>
+          <li>🎞 Films/series kijken </li>
+        </ul>
+
+      </div>
+
+      
+
+    </div>
+
+    <!-- <footer>
+      <h4>nadiagaja13@gmail.com, +31637024184, Purmerend</h4>
+    </footer> -->
+
+
+  </section>
 </article>
+
+
+
+<button>>click me</button>
+
+<script src="scripts/script.js"></script>
 
 {% render 'partials/foot.liquid' %}

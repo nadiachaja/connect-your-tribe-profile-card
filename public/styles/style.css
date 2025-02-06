@@ -127,6 +127,11 @@ summary {
   padding-bottom: 1em;
 }
 
+button{
+  background-color: transparent;
+  border: none;
+}
+
 /* footer{
   position: fixed;
   bottom: 0;
@@ -135,9 +140,47 @@ summary {
 
 
 
-
-
-/* .foto-waterfall{
+.foto-waterfall{
   height: 10em;
-} */
+  display: none;
+  z-index: 100;
+  position:fixed;
+  bottom: 3em;
+  left: 2em;
+}
 
+.foto-js{
+height: 10em;
+display: none;
+z-index: 100;
+position:fixed;
+top: 18em;
+right: 3em;
+}
+
+.foto-books{
+  height: 10em;
+  display: none;
+  z-index: 100;
+  position:fixed;
+  bottom: 2em;
+  right: 2em;
+}
+
+.foto-youtube{
+  height: 10em;
+  display: none;
+  z-index: 100;
+  position:fixed;
+  top: 4em;
+  left: 1em;
+}
+
+.foto-alita{
+  width: 15em;
+  display: none;
+  z-index: 100;
+  position:fixed;
+  top: 1em;
+  left: 7em;
+}

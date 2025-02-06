@@ -9,7 +9,8 @@ body {
   --background-secondary: #3C3C3C;
   --background-summary: #6683A3;
   --background-info-text: #D9D9D9;
-  --background-summary-hover:#90b9e6;
+  --background-summary-hover: #90b9e6;
+  --background-year:#000000;
 
   --text-general: #ffffff;
   --text-secondary: #000000;
@@ -36,8 +37,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  > div {
+
+  >div {
     background-color: var(--background-secondary);
     width: 400px;
 
@@ -63,14 +64,23 @@ h1 {
 }
 
 .age {
+  width: 45px;
+  height: 30px;
+  background-color: var(--background-year);
   color: var(--text-general);
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
 }
 
 .education {
   color: var(--text-general);
 }
 
-details{
+details {
   color: var(--text-general);
   margin: 2em;
 }
@@ -85,7 +95,7 @@ details[open] .info-text {
   border-top-right-radius: 0;
 }
 
-.sub-info{
+.sub-info {
   display: flex;
   justify-content: space-evenly;
   gap: 2em;
@@ -100,7 +110,7 @@ summary {
   display: flex;
   justify-content: center;
 
-  &:hover{
+  &:hover {
     background-color: var(--background-summary-hover);
   }
 }
@@ -127,60 +137,74 @@ summary {
   padding-bottom: 1em;
 }
 
-button{
+button {
   background-color: transparent;
   border: none;
 }
 
-/* footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-} */
+.camera:hover {
+  filter: drop-shadow(0 0 0.75rem #ffffff);
+}
 
+.html-tag:hover {
+  filter: drop-shadow(0 0 0.75rem #ffffff);
+}
 
+.book:hover {
+  filter: drop-shadow(0 0 0.75rem #ffffff);
+}
 
-.foto-waterfall{
+.music:hover {
+  filter: drop-shadow(0 0 0.75rem #ffffff);
+}
+
+.movie:hover {
+  filter: drop-shadow(0 0 0.75rem #ffffff);
+}
+
+.foto-waterfall {
   height: 10em;
   display: none;
   z-index: 100;
-  position:fixed;
+  position: fixed;
   bottom: 3em;
   left: 2em;
 }
 
-.foto-js{
-height: 10em;
-display: none;
-z-index: 100;
-position:fixed;
-top: 18em;
-right: 3em;
-}
-
-.foto-books{
+.foto-js {
   height: 10em;
   display: none;
   z-index: 100;
-  position:fixed;
+  position: fixed;
+  top: 18em;
+  right: 3em;
+}
+
+.foto-books {
+  height: 10em;
+  display: none;
+  z-index: 100;
+  position: fixed;
   bottom: 2em;
   right: 2em;
 }
 
-.foto-youtube{
+.foto-youtube {
   height: 10em;
   display: none;
   z-index: 100;
-  position:fixed;
+  position: fixed;
   top: 4em;
   left: 1em;
 }
 
-.foto-alita{
+.foto-alita {
   width: 15em;
   display: none;
   z-index: 100;
-  position:fixed;
+  position: fixed;
   top: 1em;
   left: 7em;
 }
+
+
